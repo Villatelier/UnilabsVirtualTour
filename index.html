@@ -1,135 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Project Title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
-<style> @-ms-viewport { width: device-width; } </style>
-<link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+  <style>
+    @-ms-viewport {
+      width: device-width;
+    }
+  </style>
+  <link rel="stylesheet" href="vendor/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="/img/pano.svg">
 </head>
+
 <body class="multiple-scenes ">
 
-<div id="pano"></div>
+  <div id="pano"></div>
 
-<div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-unilabs_pv360_entry">
-        <li class="text">UNILABS_PV360_ENTRY</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-unilabs_pv360_reception">
-        <li class="text">UNILABS_PV360_Reception</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-unilabs_pv360_waiting_lounge">
-        <li class="text">UNILABS_PV360_Waiting_Lounge</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="3-unilabs_pv360_kids_area">
-        <li class="text">UNILABS_PV360_Kids_area</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="4-unilabs_pv360_wainting_area1">
-        <li class="text">UNILABS_PV360_Wainting_Area1</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="5-unilabs_pv360_waiting_area2">
-        <li class="text">UNILABS_PV360_Waiting_area2</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="6-unilabs_pv360_corridor">
-        <li class="text">UNILABS_PV360_Corridor</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="7-unilabs_pv360_blood_collection">
-        <li class="text">UNILABS_PV360_Blood_Collection</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="8-unilabs_pv360_sperm_collection">
-        <li class="text">UNILABS_PV360_Sperm_Collection</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="9-unilabs_pv360_kids_collection">
-        <li class="text">UNILABS_PV360_Kids_Collection</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="10-unilabs_pv360_mri_room">
-        <li class="text">UNILABS_PV360_MRI_room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="11-unilabs_pv360_staff_relax_room">
-        <li class="text">UNILABS_PV360_Staff_Relax_Room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="12-unilabs_pv360_radiology_room">
-        <li class="text">UNILABS_PV360_Radiology_room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="13-unilabs_pv360_cardiology_room">
-        <li class="text">UNILABS_PV360_Cardiology_room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="14-unilabs_pv360_recovery_room">
-        <li class="text">UNILABS_PV360_Recovery_Room</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="15-unilabs_pv360_staff_kitchen">
-        <li class="text">UNILABS_PV360_Staff_Kitchen</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="16-unilabs_pv360_staff_room">
-        <li class="text">UNILABS_PV360_Staff_Room</li>
-      </a>
-    
-  </ul>
-</div>
+  <div id="sceneList">
+    <ul class="scenes">
+    </ul>
+  </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
-</div>
+  <div id="titleBar">
+    <h1 class="sceneName"></h1>
+  </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
+  <a href="javascript:void(0)" id="autorotateToggle" style="display: none;">
+    <img class="icon off" src="img/play.png">
+    <img class="icon on" src="img/pause.png">
+  </a>
 
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
+  <a href="javascript:void(0)" id="fullscreenToggle">
+    <img class="icon off" src="img/fullscreen.png">
+    <img class="icon on" src="img/windowed.png">
+  </a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
+  <a href="javascript:void(0)" id="sceneListToggle">
+    <img class="icon off" src="img/menu.svg">
+    <img class="icon on" src="img/close.svg">
+  </a>
 
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
+  <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+    <img class="icon" src="img/up.png">
+  </a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+    <img class="icon" src="img/down.png">
+  </a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+    <img class="icon" src="img/left.png">
+  </a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+    <img class="icon" src="img/right.png">
+  </a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+    <img class="icon" src="img/plus.png">
+  </a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+    <img class="icon" src="img/minus.png">
+  </a>
 
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
+  <script src="vendor/screenfull.min.js"></script>
+  <script src="vendor/bowser.min.js"></script>
+  <script src="vendor/marzipano.js"></script>
 
-<script src="data.js"></script>
-<script src="index.js"></script>
+  <script src="data.js"></script>
 
+  <script>
+    document.title = APP_DATA.name;
+
+    var el = document.querySelector('#sceneList ul');
+
+    APP_DATA.scenes.forEach(i => {
+      var a = document.createElement('a');
+      var li = document.createElement('li');
+
+      a.classList.add('scene');
+      a.setAttribute('data-id', i.id);
+      a.setAttribute('href', 'javascript:void(0)');
+
+      li.classList.add('text');
+      li.innerHTML = i.name;
+
+      a.appendChild(li);
+      el.appendChild(a);
+
+    });
+  </script>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
