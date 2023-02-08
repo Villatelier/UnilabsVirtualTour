@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-unilabs_pv360_entry",
-      "name": "ENTRY",
+      "name": "Entry",
       "levels": [
         {
           "tileSize": 256,
@@ -40,7 +40,7 @@ var APP_DATA = {
     },
     {
       "id": "1-unilabs_pv360_reception",
-      "name": "UNILABS_PV360_Reception",
+      "name": "Reception",
       "levels": [
         {
           "tileSize": 256,
@@ -96,7 +96,7 @@ var APP_DATA = {
     },
     {
       "id": "2-unilabs_pv360_waiting_lounge",
-      "name": "UNILABS_PV360_Waiting_Lounge",
+      "name": "Waiting Lounge",
       "levels": [
         {
           "tileSize": 256,
@@ -152,7 +152,7 @@ var APP_DATA = {
     },
     {
       "id": "3-unilabs_pv360_kids_area",
-      "name": "UNILABS_PV360_Kids_area",
+      "name": "Kids Area",
       "levels": [
         {
           "tileSize": 256,
@@ -196,7 +196,7 @@ var APP_DATA = {
     },
     {
       "id": "4-unilabs_pv360_wainting_area1",
-      "name": "UNILABS_PV360_Wainting_Area1",
+      "name": "Wainting Area1",
       "levels": [
         {
           "tileSize": 256,
@@ -258,7 +258,7 @@ var APP_DATA = {
     },
     {
       "id": "5-unilabs_pv360_waiting_area2",
-      "name": "UNILABS_PV360_Waiting_area2",
+      "name": "Waiting Area2",
       "levels": [
         {
           "tileSize": 256,
@@ -332,7 +332,7 @@ var APP_DATA = {
     },
     {
       "id": "6-unilabs_pv360_corridor",
-      "name": "UNILABS_PV360_Corridor",
+      "name": "Corridor",
       "levels": [
         {
           "tileSize": 256,
@@ -406,7 +406,7 @@ var APP_DATA = {
     },
     {
       "id": "7-unilabs_pv360_blood_collection",
-      "name": "UNILABS_PV360_Blood_Collection",
+      "name": "Blood Collection",
       "levels": [
         {
           "tileSize": 256,
@@ -444,7 +444,7 @@ var APP_DATA = {
     },
     {
       "id": "8-unilabs_pv360_sperm_collection",
-      "name": "UNILABS_PV360_Sperm_Collection",
+      "name": "Sperm Collection",
       "levels": [
         {
           "tileSize": 256,
@@ -482,7 +482,7 @@ var APP_DATA = {
     },
     {
       "id": "9-unilabs_pv360_kids_collection",
-      "name": "UNILABS_PV360_Kids_Collection",
+      "name": "Kids Collection",
       "levels": [
         {
           "tileSize": 256,
@@ -520,7 +520,7 @@ var APP_DATA = {
     },
     {
       "id": "10-unilabs_pv360_mri_room",
-      "name": "UNILABS_PV360_MRI_room",
+      "name": "MRI Room",
       "levels": [
         {
           "tileSize": 256,
@@ -558,7 +558,7 @@ var APP_DATA = {
     },
     {
       "id": "11-unilabs_pv360_staff_relax_room",
-      "name": "UNILABS_PV360_Staff_Relax_Room",
+      "name": "Staff Relax Room",
       "levels": [
         {
           "tileSize": 256,
@@ -602,7 +602,7 @@ var APP_DATA = {
     },
     {
       "id": "12-unilabs_pv360_radiology_room",
-      "name": "UNILABS_PV360_Radiology_room",
+      "name": "Radiology Room",
       "levels": [
         {
           "tileSize": 256,
@@ -640,7 +640,7 @@ var APP_DATA = {
     },
     {
       "id": "13-unilabs_pv360_cardiology_room",
-      "name": "UNILABS_PV360_Cardiology_room",
+      "name": "Cardiology Room",
       "levels": [
         {
           "tileSize": 256,
@@ -678,7 +678,7 @@ var APP_DATA = {
     },
     {
       "id": "14-unilabs_pv360_recovery_room",
-      "name": "UNILABS_PV360_Recovery_Room",
+      "name": "Recovery Room",
       "levels": [
         {
           "tileSize": 256,
@@ -716,7 +716,7 @@ var APP_DATA = {
     },
     {
       "id": "15-unilabs_pv360_staff_kitchen",
-      "name": "UNILABS_PV360_Staff_Kitchen",
+      "name": "Staff Kitchen",
       "levels": [
         {
           "tileSize": 256,
@@ -760,7 +760,7 @@ var APP_DATA = {
     },
     {
       "id": "16-unilabs_pv360_staff_room",
-      "name": "UNILABS_PV360_Staff_Room",
+      "name": "Staff Room",
       "levels": [
         {
           "tileSize": 256,
