@@ -2,7 +2,7 @@ var APP_DATA = {
   "scenes": [
     {
       "id": "0-unilabs_pv360_entry",
-      "name": "UNILABS_PV360_ENTRY",
+      "name": "ENTRY",
       "levels": [
         {
           "tileSize": 256,
